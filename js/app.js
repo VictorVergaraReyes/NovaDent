@@ -120,22 +120,25 @@ document.addEventListener('alpine:init', () => {
         title: 'Lo que dicen nuestros pacientes',
         items: [
             {
-                text: 'Excelente atencion, me senti muy comoda durante todo el tratamiento. El personal es muy profesional y amable.',
-                name: 'Maria Gonzalez',
-                role: 'Paciente',
-                image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face'
+                text: 'Increible atencion. Me hice un blanqueamiento y los resultados superaron mis expectativas. ¡Totalmente recomendado!',
+                name: 'Maria Garcia',
+                role: 'Paciente de Ortodoncia',
+                image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDT9fEh0S9YRLcqEFKSP4OjjmdkJYuyLPTSxvfX2Rfoiayb8jxxCDPYEVaH2X8LoVjFPR87UwysZqH6MMUAhkL7aPsp-a1vPbnnNOousn5z6ZCASutEhFNm191C9EmW4_lNp8iNlMAbm7ebWs-JGAPNhL_fBzrmdxQIskoCpcbytVxYGh09NJL73_L_vMJhx7INQkNROo5Dch6OQ3tIbb2kQ1npZgc8Q7bqoE5OwPwvaYDCKH3pX6P0OOFjAKUQZXifaSX5UQuFCPTI',
+                featured: false
             },
             {
-                text: 'El mejor equipo dental que he conocido. Mi tratamiento de ortodoncia fue rapido y sin molestias.',
+                text: 'El mejor equipo dental que he conocido. Las instalaciones son de lujo y el trato es muy profesional y cercano.',
                 name: 'Carlos Ruiz',
-                role: 'Paciente',
-                image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
+                role: 'Paciente de Implantes',
+                image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAvswjQNjHpVPomCBQrqyHo6MS6uR-JXuPi_1lE04jM4B8zpSK0BY5vfDtLrqdIYQXvYt9lyykWT7QE8ucMBChT2Ctf_TLRskIqMaoYFglvccHfnahaJwzIooa-ZGJ03PZzhkoElZlQ8m0YmsgFxoV1JPo6CY4X13gH6KagUK5Ew3nQm9jUAb6yrIrdCAD8ezeM9yKcbAELSJBIPZCdf4mZ0MgWAsdKPoye7dztHe8MF_Pvmdhl0wL1aMWdZzGJ6aUYLHol9lsfIrSU',
+                featured: true
             },
             {
-                text: 'Despues de años con miedo al dentista, encontre en NovaDent un lugar donde me siento segura. Totalmente recomendado.',
-                name: 'Ana Martinez',
-                role: 'Paciente',
-                image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face'
+                text: 'Tenia mucho miedo al dentista, pero en NovaDent me hicieron sentir muy tranquilo. El tratamiento fue totalmente sin dolor.',
+                name: 'Elena Martinez',
+                role: 'Paciente General',
+                image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB50Y7Br79QmodEgbWh6-ZB184QU721RytZrFpFe18wpQxDsjxOIAp1gfFwlC8E9hGbTYjLcXaLLEkmkP3ylquASBsMVUnmKKg5jotUmJgYY8zAU7Kv03biRWiv8f24Giah6hZDYbH8K-AWHToJcUgyp4ULJqkoU6cXAGHyVthSDpxcWfvXRf9GOHjJV6VQEf_DgyJaQVSi_RkW9vOn1rguFbU7733knQHyP2T0Xl_J-9QcwZMdELwz3HDjEAzXuY9C4rmGfsXbP6zB',
+                featured: false
             }
         ]
     }));
