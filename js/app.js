@@ -171,7 +171,10 @@ document.addEventListener('alpine:init', () => {
                 event: 'lead_submit',
                 lead_type: 'dental_appointment',
                 service: this.formData.horario || 'general',
-                form_name: 'contact_form'
+                form_name: 'contact_form',
+                user_name: this.formData.nombre,
+                user_email: this.formData.email,
+                user_phone: this.formData.telefono
             });
 
             alert('Gracias por tu mensaje. Te contactaremos pronto.');
