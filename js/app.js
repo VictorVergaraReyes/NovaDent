@@ -166,22 +166,17 @@ document.addEventListener('alpine:init', () => {
             horario: ''
         },
         submitForm() {
-            // Send event to Google Tag Manager
-            if (window.dataLayer) {
-                window.dataLayer.push({
-                    event: 'form_submit',
-                    form_name: 'contact_form',
-                    form_data: {
-                        nombre: this.formData.nombre,
-                        telefono: this.formData.telefono,
-                        email: this.formData.email,
-                        horario: this.formData.horario
-                    }
-                });
-            }
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'lead_submit',
+                lead_type: 'dental_appointment',
+                service: this.formData.horario || 'general',
+                form_name: 'contact_form'
+            });
 
             alert('Gracias por tu mensaje. Te contactaremos pronto.');
             this.formData = { nombre: '', telefono: '', email: '', horario: '' };
         }
+
     }));
 });
