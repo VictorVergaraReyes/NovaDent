@@ -1,0 +1,62 @@
+<!-- Footer Component -->
+<footer id="contacto" class="footer-section" x-data="footer">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-5">
+                <h3 class="footer-title" x-text="title"></h3>
+                <p class="footer-description" x-text="description"></p>
+                <div class="mt-4">
+                    <template x-for="item in contact" :key="item.text">
+                        <div class="contact-item">
+                            <i :class="item.icon"></i>
+                            <span x-text="item.text"></span>
+                        </div>
+                    </template>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="bg-white p-4 rounded-4 shadow-sm">
+                    <h4 class="h5 fw-bold mb-3">Solicita tu valoracion</h4>
+                    <form @submit.prevent="submitForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Nombre Completo"
+                                       x-model="formData.nombre" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control" placeholder="Telefono"
+                                       x-model="formData.telefono" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Correo Electronico"
+                                       x-model="formData.email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <select class="form-control" x-model="formData.horario" required>
+                                    <option value="">Horario de interes</option>
+                                    <option value="manana">Manana (9:00 - 13:00)</option>
+                                    <option value="tarde">Tarde (14:00 - 19:00)</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-100">
+                                    Solicitar valoracion
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+            <div class="footer-logo">
+                <i class="bi bi-heart-pulse"></i> Nova<span>Dent</span>
+            </div>
+            <p class="text-muted small mb-0">© 2024 NovaDent. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Terminos y condiciones</a>
+                <a href="#">Politica de privacidad</a>
+            </div>
+        </div>
+    </div>
+</footer>

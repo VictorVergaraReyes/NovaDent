@@ -1,0 +1,29 @@
+<!-- Testimonials Component -->
+<section id="testimonios" class="testimonials-section" x-data="testimonials">
+    <div class="container">
+        <h2 class="section-title" x-text="title"></h2>
+        <div class="row g-4">
+            <template x-for="(testimonial, index) in items" :key="index">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text" x-text="testimonial.text"></p>
+                        <div class="testimonial-author">
+                            <img :src="testimonial.image" :alt="testimonial.name">
+                            <div>
+                                <div class="testimonial-author-name" x-text="testimonial.name"></div>
+                                <div class="testimonial-author-role" x-text="testimonial.role"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</section>

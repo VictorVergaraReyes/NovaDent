@@ -1,0 +1,22 @@
+<!-- Services Component -->
+<section id="servicios" class="services-section" x-data="services">
+    <div class="container">
+        <h2 class="section-title" x-text="title"></h2>
+        <div class="row g-4">
+            <template x-for="(service, index) in items" :key="index">
+                <div class="col-md-4">
+                    <div class="service-card card">
+                        <img :src="service.image" :alt="service.title">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i :class="service.icon"></i>
+                                <span x-text="service.title"></span>
+                            </h5>
+                            <p class="card-text" x-text="service.description"></p>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</section>

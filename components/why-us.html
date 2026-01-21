@@ -1,0 +1,28 @@
+<!-- Why Us Component -->
+<section id="nosotros" class="why-section" x-data="whyUs">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="why-title">
+                    <span x-text="'¿' + title"></span> <span x-text="highlight + '?'"></span>
+                </h2>
+                <p class="why-description" x-text="description"></p>
+                <ul class="why-list">
+                    <template x-for="feature in features" :key="feature">
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span x-text="feature"></span>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="why-images">
+                    <template x-for="(img, index) in images" :key="index">
+                        <img :src="img.src" :alt="img.alt">
+                    </template>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
