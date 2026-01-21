@@ -1,0 +1,471 @@
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>NovaDent - Especialistas en Odontología Moderna</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00a1c2",
+                        "accent": "#2ec4b6",
+                        "background-light": "#ffffff",
+                        "background-alt": "#f8f9fa",
+                        "background-dark": "#1f2429",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#101718] font-display">
+    <!-- TopNavBar -->
+    <header
+        class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-[#f0f4f5] px-6 lg:px-40 py-3 dark:bg-background-dark/90 dark:border-gray-800">
+        <div class="max-w-[1200px] mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-2 text-primary">
+                <span class="material-symbols-outlined text-3xl font-bold">dentistry</span>
+                <h2 class="text-[#101718] dark:text-white text-xl font-extrabold tracking-tight">NovaDent</h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-[#101718] dark:text-gray-300 text-sm font-semibold hover:text-primary transition-colors"
+                    href="#servicios">Servicios</a>
+                <a class="text-[#101718] dark:text-gray-300 text-sm font-semibold hover:text-primary transition-colors"
+                    href="#beneficios">Beneficios</a>
+                <a class="text-[#101718] dark:text-gray-300 text-sm font-semibold hover:text-primary transition-colors"
+                    href="#testimonios">Testimonios</a>
+                <a class="text-[#101718] dark:text-gray-300 text-sm font-semibold hover:text-primary transition-colors"
+                    href="#contacto">Contacto</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button
+                    class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-md">
+                    Agenda tu cita
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- HeroSection -->
+    <section class="px-6 lg:px-40 py-12 lg:py-20 bg-background-light dark:bg-background-dark overflow-hidden">
+        <div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="flex flex-col gap-8 order-2 lg:order-1">
+                <div class="flex flex-col gap-4">
+                    <span class="text-accent font-bold tracking-widest uppercase text-xs">Clínica Dental NovaDent</span>
+                    <h1
+                        class="text-[#101718] dark:text-white text-4xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight">
+                        Recupera tu sonrisa con especialistas en <span class="text-primary">odontología moderna</span>
+                    </h1>
+                    <p class="text-gray-600 dark:text-gray-400 text-lg lg:text-xl leading-relaxed">
+                        Obtén tu primera consulta de valoración totalmente gratis. Equipos de última generación y
+                        especialistas dedicados a tu salud dental.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button
+                        class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg shadow-primary/20 transition-all text-center">
+                        Agenda tu cita ahora
+                    </button>
+                    <div
+                        class="flex items-center gap-3 px-4 py-2 border border-gray-100 rounded-xl dark:border-gray-800">
+                        <div class="flex -space-x-2">
+                            <div class="w-8 h-8 rounded-full border-2 border-white bg-cover bg-center"
+                                data-alt="Satisfied patient portrait"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAxIxbPXbXHtECJ3ZqxrnK-hkNWibXNXPdmSti8J2VTtl_SpdMjuUim0qzr5m6Ryg2FKThOpGr3Am4vJTBjTWFT27BAsVp9rffWCnVm3J4FIFPnUkLlfNAlxeb6jDtdZ0eVyjF3qZCLujcjwP9-RZyzBbRGv_VumyIEJcRrD8wdiArUnI10_0P8NzVIhj2q4aNlf-Timh8IVninM5MA5uxpOOgOR0vPHWmtOE9ZUCtJoqTFYt_Wo_-y-6tGnVUcbUL-EYJs19Ge-1VA')">
+                            </div>
+                            <div class="w-8 h-8 rounded-full border-2 border-white bg-cover bg-center"
+                                data-alt="Happy patient smiling"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDPqCOn4Mo1L0Ec0X_7ZAT7epQIgM-clvr_YWoHzP_vCtfHXJbBXNfS9GNgH5Lw_FtvkdjB9MFrC3PTyh-PYhPuHaXG8rPUkHFMHMMmWpNSKa-UUgdkIHJpGnNxHZBeIWfHBFcBJAD5cNxvzySAytoo4qSnhivHujEYPPqrT6lsz-QK4__lOa3dcMa1jHi7MhuUEIGzHqRkfVUdxQ6M1IwEZhRAyr4u3EprGt8PSRSxen2d7XHt2PpNcwXSu4pXDkZqmBNnx_6kC0NP')">
+                            </div>
+                        </div>
+                        <span class="text-sm font-medium text-gray-500">Más de 2,000 pacientes felices</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative order-1 lg:order-2">
+                <div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+                <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
+                <div class="relative w-full aspect-[4/5] bg-cover bg-center rounded-2xl shadow-2xl z-10"
+                    data-alt="Friendly professional dentist smiling in clinic office"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC84WVatHFdCWmrSIiRrBsmnL4DAM5Lkhn2RHyyJG8nw5toxvYrKj-S31ItaIYirAeTAmRwTZVmlnLL7J4G7wPzBDcn_-HJt7dz67KTAY4YWFSVNevGCz-4YNZjtrFvfJxnyTM2YTud-zyacJSBjsOXHmHNzLjqsXVUlv-lOXCgPmXcWn70oDCOMEBAj8Ryw6-O21sXs89CHTHINR_xr2GHZoWc71mw-_5fx6yaHuk10loTru1Qht0W0p554GHbR7M5KDU0vtBld4Mw')">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SectionHeader & ImageGrid (Services) -->
+    <section class="px-6 lg:px-40 py-16 bg-background-alt dark:bg-background-dark/50" id="servicios">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="flex flex-col items-center text-center mb-12">
+                <h2 class="text-[#101718] dark:text-white text-3xl font-bold leading-tight tracking-tight mb-4">Nuestros
+                    Servicios Especializados</h2>
+                <div class="w-20 h-1 bg-primary rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div
+                    class="bg-white dark:bg-background-dark p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 group">
+                    <div class="w-full h-48 bg-cover bg-center rounded-xl mb-6 overflow-hidden"
+                        data-alt="Dental teeth whitening treatment demonstration"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDWejSeHzMM8z9deLPGg0k8eQo-NOlQ9A9Jj6QtQwtJgcgbZ3C3TaC-dyhjyh0D5MzXbUCDJmzhQnqMwIfpxCzfc2dMCNJdZIfbaaRMGB5LbKXljb1bZKTOsRLdyosTXuRU0B7gbZALLlHdMwqZgTlqlgD8UyK9AFHGjwAFUWgsG7SuWtUAnTangPqSg4azD1ySU6uuKiAmoMuBm-i8Hs8pTd3bwKGc75RaWxeEb1YQotSr-TtdMnrdSpphwkKF1PrgD6D7MAgh8SnB')">
+                    </div>
+                    <div class="flex items-center gap-3 mb-3">
+                        <span
+                            class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">flare</span>
+                        <h3 class="text-xl font-bold text-[#101718] dark:text-white">Blanqueamiento</h3>
+                    </div>
+                    <p class="text-gray-500 dark:text-gray-400 leading-relaxed">Sonrisa más blanca y brillante en una
+                        sesión con tecnología láser indolora.</p>
+                </div>
+                <!-- Service 2 -->
+                <div
+                    class="bg-white dark:bg-background-dark p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 group">
+                    <div class="w-full h-48 bg-cover bg-center rounded-xl mb-6 overflow-hidden"
+                        data-alt="Clear dental braces and aligners close up"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWgZJonaldMC3CGBG8YMatds10aPqBmWpkJsG5qw6xSVtdrLm8eMV--YDs8dEhquSLTal0E-RRoTWBRz4dEQCAN3qht-VOTb9I13GV7Y_HEB3cw9IF6FQH7FHnR8G-Jc2x3LCROhRRwgUsd2kNtCwhnNZ83pX5wsqrK0a_MKxwHXuZwoQwHjLzHncQUGEBmovkCFoLBcCEWCI3q53dw6nC_gBGf_iMKfYX_fQSP3atsqTVZUrsg5IjpL8TAIYYdVOb855jQYqQ1YA-')">
+                    </div>
+                    <div class="flex items-center gap-3 mb-3">
+                        <span
+                            class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">grid_view</span>
+                        <h3 class="text-xl font-bold text-[#101718] dark:text-white">Ortodoncia</h3>
+                    </div>
+                    <p class="text-gray-500 dark:text-gray-400 leading-relaxed">Alineación perfecta con técnicas
+                        invisibles (Invisalign) y brackets estéticos.</p>
+                </div>
+                <!-- Service 3 -->
+                <div
+                    class="bg-white dark:bg-background-dark p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 group">
+                    <div class="w-full h-48 bg-cover bg-center rounded-xl mb-6 overflow-hidden"
+                        data-alt="Model of a dental implant procedure"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBY9iu2kBUq0SwJQSFtlQ5dip4-czlD2JbyKYippd7mAg0ereSOpOn-7YmkgyudxGKw64x0C3ZBpyvK4sj3cS3QhbOz3nWgAY9nzSGjfNHeVSn8u9RzZ0TYPv0FG7oGZ9mFzIC-oFOTHAOBFLVvml8dBy2KatKTWwyfT4N6OScp6ULE8F4E6cLfEmlpCaw7jpJCZlQ-VRnVC3PVb3XSdcSV5EtelB0s1xOQDZyPTKTR6VCiHRtoQMTxQ6SAjqP-Tc0YqqH02hbURqD5')">
+                    </div>
+                    <div class="flex items-center gap-3 mb-3">
+                        <span
+                            class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">medical_services</span>
+                        <h3 class="text-xl font-bold text-[#101718] dark:text-white">Implantes</h3>
+                    </div>
+                    <p class="text-gray-500 dark:text-gray-400 leading-relaxed">Restaura la funcionalidad y estética de
+                        tu dentadura con materiales premium.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FeatureSection (Benefits) -->
+    <section class="px-6 lg:px-40 py-20 bg-background-light dark:bg-background-dark" id="beneficios">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="flex flex-col gap-6">
+                    <h2
+                        class="text-[#101718] dark:text-white text-4xl lg:text-5xl font-black leading-tight tracking-tight">
+                        ¿Por qué elegir <span class="text-accent">NovaDent</span>?
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+                        Nos enfocamos en brindar una experiencia cómoda y resultados duraderos mediante un trato humano
+                        y tecnología de punta.
+                    </p>
+                    <div class="flex flex-col gap-6 mt-4">
+                        <div class="flex gap-4">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center">
+                                <span class="material-symbols-outlined">verified</span>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-[#101718] dark:text-white">Especialistas certificados
+                                </h4>
+                                <p class="text-gray-500 text-sm">Equipo médico con años de experiencia y certificaciones
+                                    internacionales.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center">
+                                <span class="material-symbols-outlined">biotech</span>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-[#101718] dark:text-white">Tecnología moderna</h4>
+                                <p class="text-gray-500 text-sm">Contamos con escaneo digital y equipos de mínima
+                                    invasión para tu comodidad.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center">
+                                <span class="material-symbols-outlined">sentiment_very_satisfied</span>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-[#101718] dark:text-white">Atención sin dolor</h4>
+                                <p class="text-gray-500 text-sm">Protocolos diseñados para tu total comodidad durante
+                                    cada tratamiento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="w-full aspect-square bg-cover bg-center rounded-2xl shadow-lg mt-8"
+                        data-alt="Modern dental equipment in a bright clinic"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTdFyhbbSBv7TdQSvJ4s7NK4lAmxYoVybdJTzv5yPe7CZvyWNX9T8eB8arPoiEF0Exo8ujB4ReSnXNSIx4KS3ELMOWhvPCmjDbfGYeEIb2cw7Yiesi4RY1OuLTbGveCO3L9Pa5LtOW6PTvsfaG1yP4O3f7ZQDgVmMBOixd_wgnFdO7gdXWPG0MbG_zGGd4pYQjFIys6dJLCEUm24jSWcmR0MW3Dv2aCBAM4slsNlNz6HP4k-HU_BXeH9wcH8UWvGmVjzR4AD_Crnua')">
+                    </div>
+                    <div class="w-full aspect-square bg-cover bg-center rounded-2xl shadow-lg"
+                        data-alt="Medical professional at work with technology"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJRC27YObqBlXHXf0XmoJlBMl-PMeTColAdT7CWRD9tIxBHYeZ8KMGYPLp8pFOcPqEf5Y1AE5tyoH4VNhuiPIrwq3K08xZk4rY815IelK5zUuu7V5JNqSxYUoPZE2F0mI0SUWWbDkolF10oACLbdCZccWcxJEReqgAvUJ3sRAaTGZfGB3XtWqSewWxW5DDK9l0L6XRV_4mS_Bgx2efmLyihrKZDD44ZV8E3ABWHxrvHZ0SxLVFchoWDsy7Ad6cWDuIV4BLGuaJD2vc')">
+                    </div>
+                    <div class="w-full aspect-square bg-cover bg-center rounded-2xl shadow-lg -mt-8"
+                        data-alt="Close up of high tech dental instruments"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAscb9Tg0KogulI_uGSW9-2t4Cn8tr2HgYr-ScXRBGD1vkP86Amnmt0FLW_euki4whF8HB7hvW5Ry3scwcohvbY-I0fgUaIuUzbaHhgowqzgNgAmWZZLDcAzUz3-MPRgjHicO-o79u8X4m6U9x-y7IcVN32_RhHUeXtBfl3FJPe4ZyKPZ7lIEfz_oxiYAHQcmSy2IO4oCSO3AgCH4S0ZMdtVGzK8r_w3aRAYFVJTJmXNcVN_-APCxXd2rue-sZVPK1dSlYaI-jIb0mR')">
+                    </div>
+                    <div class="w-full aspect-square bg-cover bg-center rounded-2xl shadow-lg"
+                        data-alt="Modern clinic waiting room design"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuATjPT7TN1FfedChBUuVheyHlaYCcYmRImg8qg4wbTSYaOvXSEUYhSR3qf8CRDzOE1qRmI10xSofAL1o9kc3ac57xYAM4NK0VPU_PwvzCJ72WPyFCSIMSdfLF7GlEmYM-523LcXZ7e4lDe3hg_BdcERVJ_AdXeuRQu6QZgttWu7Ce7ying_JChft23BwqECI77rCBFIFlLusTSyFDvQXZ3N25-XKPhGz_DC3txu79HXPGMoie1E5SELRbGdAR7R_p4Ry3_JQWPVRsXR')">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="px-6 lg:px-40 py-16 bg-background-alt dark:bg-background-dark/30" id="testimonios">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="flex flex-col items-center text-center mb-16">
+                <h2 class="text-[#101718] dark:text-white text-3xl font-bold tracking-tight">Lo que dicen nuestros
+                    pacientes</h2>
+                <div class="w-16 h-1 bg-accent rounded-full mt-4"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="bg-white dark:bg-background-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
+                    <div class="flex items-center gap-1 text-yellow-400 mb-4">
+                        <span class="material-symbols-outlined font-fill">star</span><span
+                            class="material-symbols-outlined font-fill">star</span><span
+                            class="material-symbols-outlined font-fill">star</span><span
+                            class="material-symbols-outlined font-fill">star</span><span
+                            class="material-symbols-outlined font-fill">star</span>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 italic">"Increíble atención. Me hice un
+                        blanqueamiento y los resultados superaron mis expectativas. ¡Totalmente recomendado!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-cover bg-center" data-alt="Portrait of Maria Garcia"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDT9fEh0S9YRLcqEFKSP4OjjmdkJYuyLPTSxvfX2Rfoiayb8jxxCDPYEVaH2X8LoVjFPR87UwysZqH6MMUAhkL7aPsp-a1vPbnnNOousn5z6ZCASutEhFNm191C9EmW4_lNp8iNlMAbm7ebWs-JGAPNhL_fBzrmdxQIskoCpcbytVxYGh09NJL73_L_vMJhx7INQkNROo5Dch6OQ3tIbb2kQ1npZgc8Q7bqoE5OwPwvaYDCKH3pX6P0OOFjAKUQZXifaSX5UQuFCPTI')">
+                        </div>
+                        <div>
+                            <p class="font-bold dark:text-white">María García</p>
+                            <p class="text-xs text-gray-400">Paciente de Ortodoncia</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white dark:bg-background-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 scale-105 shadow-xl border-primary/20">
+                    <div class="flex items-center gap-1 text-yellow-400 mb-4">
+                        <span class="material-symbols-outlined font-fill">star</span><span
+                            class="material-symbols-outlined font-fill">star</span><span
+                            class="material-symbols-outlined font-fill">star</span><span
+                            class="material-symbols-outlined font-fill">star</span><span
+                            class="material-symbols-outlined font-fill">star</span>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 italic">"El mejor equipo dental que he conocido. Las
+                        instalaciones son de lujo y el trato es muy profesional y cercano."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-cover bg-center" data-alt="Portrait of Carlos Ruiz"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvswjQNjHpVPomCBQrqyHo6MS6uR-JXuPi_1lE04jM4B8zpSK0BY5vfDtLrqdIYQXvYt9lyykWT7QE8ucMBChT2Ctf_TLRskIqMaoYFglvccHfnahaJwzIooa-ZGJ03PZzhkoElZlQ8m0YmsgFxoV1JPo6CY4X13gH6KagUK5Ew3nQm9jUAb6yrIrdCAD8ezeM9yKcbAELSJBIPZCdf4mZ0MgWAsdKPoye7dztHe8MF_Pvmdhl0wL1aMWdZzGJ6aUYLHol9lsfIrSU')">
+                        </div>
+                        <div>
+                            <p class="font-bold dark:text-white">Carlos Ruiz</p>
+                            <p class="text-xs text-gray-400">Paciente de Implantes</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white dark:bg-background-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
+                    <div class="flex items-center gap-1 text-yellow-400 mb-4">
+                        <span class="material-symbols-outlined font-fill">star</span><span
+                            class="material-symbols-outlined font-fill">star</span><span
+                            class="material-symbols-outlined font-fill">star</span><span
+                            class="material-symbols-outlined font-fill">star</span><span
+                            class="material-symbols-outlined font-fill">star</span>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 italic">"Tenía mucho miedo al dentista, pero en
+                        NovaDent me hicieron sentir muy tranquilo. El tratamiento fue totalmente sin dolor."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-cover bg-center" data-alt="Portrait of Elena Martinez"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB50Y7Br79QmodEgbWh6-ZB184QU721RytZrFpFe18wpQxDsjxOIAp1gfFwlC8E9hGbTYjLcXaLLEkmkP3ylquASBsMVUnmKKg5jotUmJgYY8zAU7Kv03biRWiv8f24Giah6hZDYbH8K-AWHToJcUgyp4ULJqkoU6cXAGHyVthSDpxcWfvXRf9GOHjJV6VQEf_DgyJaQVSi_RkW9vOn1rguFbU7733knQHyP2T0Xl_J-9QcwZMdELwz3HDjEAzXuY9C4rmGfsXbP6zB')">
+                        </div>
+                        <div>
+                            <p class="font-bold dark:text-white">Elena Martínez</p>
+                            <p class="text-xs text-gray-400">Paciente General</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Intermediate CTA Banner -->
+    <section class="w-full bg-primary py-12 px-6">
+        <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="text-white text-center md:text-left">
+                <h2 class="text-3xl font-extrabold mb-2">¿Listo para transformar tu sonrisa?</h2>
+                <p class="text-white/80 text-lg">Agenda tu valoración gratuita hoy mismo y descubre la diferencia.</p>
+            </div>
+            <button
+                class="bg-white text-primary hover:bg-gray-100 px-10 py-4 rounded-xl font-bold text-lg shadow-xl transition-all whitespace-nowrap">
+                Agendar cita ahora
+            </button>
+        </div>
+    </section>
+    <!-- Conversion Form Section -->
+    <section class="px-6 lg:px-40 py-20 bg-background-light dark:bg-background-dark" id="contacto">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Contact Info -->
+                <div class="flex flex-col gap-10">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6 dark:text-white">Estamos para ayudarte</h2>
+                        <p class="text-gray-600 dark:text-gray-400 mb-8">Visítanos en nuestras instalaciones o
+                            contáctanos por el medio que prefieras.</p>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent">
+                                <span class="material-symbols-outlined">location_on</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold dark:text-white">Dirección</h4>
+                                <p class="text-gray-500">Av. Salud Dental 123, Piso 4, Ciudad de México</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent">
+                                <span class="material-symbols-outlined">call</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold dark:text-white">Teléfono</h4>
+                                <p class="text-gray-500">+52 55 1234 5678</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-green-500">
+                                <span class="material-symbols-outlined">chat</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold dark:text-white">WhatsApp</h4>
+                                <p class="text-gray-500">+52 55 8765 4321 (Atención inmediata)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent">
+                                <span class="material-symbols-outlined">schedule</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold dark:text-white">Horarios</h4>
+                                <p class="text-gray-500">Lun - Vie: 9:00 AM - 7:00 PM<br />Sáb: 10:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form -->
+                <div
+                    class="bg-white dark:bg-background-dark p-8 lg:p-10 rounded-3xl shadow-2xl border border-gray-100 dark:border-gray-800">
+                    <h3 class="text-2xl font-bold mb-8 dark:text-white">Solicita tu valoración</h3>
+                    <form action="#" class="flex flex-col gap-6">
+                        <div class="flex flex-col gap-2">
+                            <label class="text-sm font-bold text-gray-700 dark:text-gray-300">Nombre Completo</label>
+                            <input
+                                class="w-full px-4 py-3 rounded-lg border border-gray-200 dark:bg-background-dark dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                                placeholder="Ej. Juan Pérez" type="text" />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-sm font-bold text-gray-700 dark:text-gray-300">Teléfono /
+                                WhatsApp</label>
+                            <input
+                                class="w-full px-4 py-3 rounded-lg border border-gray-200 dark:bg-background-dark dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                                placeholder="55 1234 5678" type="tel" />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-sm font-bold text-gray-700 dark:text-gray-300">Servicio de
+                                interés</label>
+                            <select
+                                class="w-full px-4 py-3 rounded-lg border border-gray-200 dark:bg-background-dark dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all">
+                                <option>Blanqueamiento</option>
+                                <option>Ortodoncia</option>
+                                <option>Implantes</option>
+                                <option>Limpieza General</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <button
+                            class="bg-primary hover:bg-primary/90 text-white w-full py-4 rounded-xl font-bold text-lg shadow-lg shadow-primary/20 transition-all mt-4"
+                            type="submit">
+                            Solicitar cita
+                        </button>
+                        <p class="text-xs text-center text-gray-400">Tus datos están seguros con nosotros. Nos pondremos
+                            en contacto a la brevedad.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-background-dark text-white py-12 px-6 lg:px-40">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-2 text-primary">
+                        <span class="material-symbols-outlined text-3xl font-bold">dentistry</span>
+                        <h2 class="text-white text-xl font-extrabold tracking-tight">NovaDent</h2>
+                    </div>
+                    <p class="text-gray-400 max-w-[300px] text-sm leading-relaxed">
+                        Comprometidos con la salud bucal y la estética dental mediante excelencia profesional.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-16">
+                    <div class="flex flex-col gap-4">
+                        <h5 class="font-bold text-sm uppercase tracking-widest text-primary">Navegación</h5>
+                        <ul class="flex flex-col gap-2 text-gray-400 text-sm">
+                            <li><a class="hover:text-white transition-colors" href="#">Inicio</a></li>
+                            <li><a class="hover:text-white transition-colors" href="#servicios">Servicios</a></li>
+                            <li><a class="hover:text-white transition-colors" href="#beneficios">Beneficios</a></li>
+                            <li><a class="hover:text-white transition-colors" href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h5 class="font-bold text-sm uppercase tracking-widest text-primary">Legal</h5>
+                        <ul class="flex flex-col gap-2 text-gray-400 text-sm">
+                            <li><a class="hover:text-white transition-colors" href="#">Privacidad</a></li>
+                            <li><a class="hover:text-white transition-colors" href="#">Términos</a></li>
+                            <li><a class="hover:text-white transition-colors" href="#">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-gray-500">© 2024 NovaDent Clínica Dental. Todos los derechos reservados.</p>
+                <p class="text-[10px] text-gray-600">Este es un diseño de portafolio profesional para fines de
+                    demostración.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

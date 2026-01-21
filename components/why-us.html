@@ -4,22 +4,29 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <h2 class="why-title">
-                    <span x-text="'¿' + title"></span> <span x-text="highlight + '?'"></span>
+                    ¿Por qué elegir <span x-text="highlight + '?'"></span>
                 </h2>
                 <p class="why-description" x-text="description"></p>
-                <ul class="why-list">
-                    <template x-for="feature in features" :key="feature">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            <span x-text="feature"></span>
-                        </li>
+                <div class="why-features">
+                    <template x-for="feature in features" :key="feature.title">
+                        <div class="why-feature-item">
+                            <div class="why-feature-icon">
+                                <i :class="feature.icon"></i>
+                            </div>
+                            <div class="why-feature-content">
+                                <h4 x-text="feature.title"></h4>
+                                <p x-text="feature.description"></p>
+                            </div>
+                        </div>
                     </template>
-                </ul>
+                </div>
             </div>
             <div class="col-lg-6">
-                <div class="why-images">
+                <div class="why-images-grid">
                     <template x-for="(img, index) in images" :key="index">
-                        <img :src="img.src" :alt="img.alt">
+                        <div class="why-image-item" :class="'why-image-' + (index + 1)">
+                            <img :src="img.src" :alt="img.alt">
+                        </div>
                     </template>
                 </div>
             </div>

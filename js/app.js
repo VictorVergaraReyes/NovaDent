@@ -88,18 +88,30 @@ document.addEventListener('alpine:init', () => {
 
     // Why Us Component
     Alpine.data('whyUs', () => ({
-        title: 'Por que elegir',
         highlight: 'NovaDent',
-        description: 'Somos una clinica dental comprometida con tu bienestar y tranquilidad. Nuestro equipo trabaja en instalaciones modernas y tecnologia de punta.',
+        description: 'Nos enfocamos en brindar una experiencia comoda y resultados duraderos mediante un trato humano y tecnologia de punta.',
         features: [
-            'Especialistas certificados',
-            'Tecnologia moderna',
-            'Atencion sin dolor'
+            {
+                icon: 'bi-patch-check-fill',
+                title: 'Especialistas certificados',
+                description: 'Equipo medico con años de experiencia y certificaciones internacionales.'
+            },
+            {
+                icon: 'bi-cpu-fill',
+                title: 'Tecnologia moderna',
+                description: 'Contamos con escaneo digital y equipos de minima invasion para tu comodidad.'
+            },
+            {
+                icon: 'bi-emoji-smile-fill',
+                title: 'Atencion sin dolor',
+                description: 'Protocolos diseñados para tu total comodidad durante cada tratamiento.'
+            }
         ],
         images: [
-            { src: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&h=300&fit=crop', alt: 'Consultorio dental' },
-            { src: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=300&h=200&fit=crop', alt: 'Equipo dental' },
-            { src: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=300&h=200&fit=crop', alt: 'Tecnologia dental' }
+            { src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCTdFyhbbSBv7TdQSvJ4s7NK4lAmxYoVybdJTzv5yPe7CZvyWNX9T8eB8arPoiEF0Exo8ujB4ReSnXNSIx4KS3ELMOWhvPCmjDbfGYeEIb2cw7Yiesi4RY1OuLTbGveCO3L9Pa5LtOW6PTvsfaG1yP4O3f7ZQDgVmMBOixd_wgnFdO7gdXWPG0MbG_zGGd4pYQjFIys6dJLCEUm24jSWcmR0MW3Dv2aCBAM4slsNlNz6HP4k-HU_BXeH9wcH8UWvGmVjzR4AD_Crnua', alt: 'Equipo dental moderno' },
+            { src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDJRC27YObqBlXHXf0XmoJlBMl-PMeTColAdT7CWRD9tIxBHYeZ8KMGYPLp8pFOcPqEf5Y1AE5tyoH4VNhuiPIrwq3K08xZk4rY815IelK5zUuu7V5JNqSxYUoPZE2F0mI0SUWWbDkolF10oACLbdCZccWcxJEReqgAvUJ3sRAaTGZfGB3XtWqSewWxW5DDK9l0L6XRV_4mS_Bgx2efmLyihrKZDD44ZV8E3ABWHxrvHZ0SxLVFchoWDsy7Ad6cWDuIV4BLGuaJD2vc', alt: 'Profesional medico' },
+            { src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAscb9Tg0KogulI_uGSW9-2t4Cn8tr2HgYr-ScXRBGD1vkP86Amnmt0FLW_euki4whF8HB7hvW5Ry3scwcohvbY-I0fgUaIuUzbaHhgowqzgNgAmWZZLDcAzUz3-MPRgjHicO-o79u8X4m6U9x-y7IcVN32_RhHUeXtBfl3FJPe4ZyKPZ7lIEfz_oxiYAHQcmSy2IO4oCSO3AgCH4S0ZMdtVGzK8r_w3aRAYFVJTJmXNcVN_-APCxXd2rue-sZVPK1dSlYaI-jIb0mR', alt: 'Instrumentos dentales' },
+            { src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuATjPT7TN1FfedChBUuVheyHlaYCcYmRImg8qg4wbTSYaOvXSEUYhSR3qf8CRDzOE1qRmI10xSofAL1o9kc3ac57xYAM4NK0VPU_PwvzCJ72WPyFCSIMSdfLF7GlEmYM-523LcXZ7e4lDe3hg_BdcERVJ_AdXeuRQu6QZgttWu7Ce7ying_JChft23BwqECI77rCBFIFlLusTSyFDvQXZ3N25-XKPhGz_DC3txu79HXPGMoie1E5SELRbGdAR7R_p4Ry3_JQWPVRsXR', alt: 'Sala de espera moderna' }
         ]
     }));
 
