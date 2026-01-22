@@ -1,5 +1,9 @@
 # NovaDent - Sitio Web Frontend
 
+🌐 **[Ver en Vivo](https://novadent.onrender.com)** ↗️
+
+---
+
 ## Stack Tecnológico
 
 Este proyecto está desarrollado con un enfoque **moderno pero pragmático**, utilizando tecnologías ligeras y performantes sin agregar la complejidad innecesaria de frameworks SPA.
